@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>VoltVision - Real-time energy intelligence</title>
+  <meta name="description" content="VoltVision builds IoT electrical energy systems: smart meters + LoRa connectivity + a mobile app for real-time visibility, alerts, and savings." />
+  <meta name="theme-color" content="#0b0f1a" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="topbar" id="top">
+    <div class="container topbar__inner">
+      <a class="brand" href="#top" aria-label="VoltVision home">
+        <span class="brand__mark" aria-hidden="true">⚡</span>
+        <span class="brand__name">VoltVision</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#product">Product</a>
+        <a href="#app">App</a>
+        <a href="#how">How it works</a>
+        <a href="#team">Team</a>
+        <a href="#contact" class="nav__cta">Contact</a>
+      </nav>
+
+      <button class="navbtn" id="navbtn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-nav" id="mobilenav" aria-hidden="true">
+      <a href="#product">Product</a>
+      <a href="#app">App</a>
+      <a href="#how">How it works</a>
+      <a href="#team">Team</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow">IoT energy systems • smart metering • LoRa connectivity</p>
+          <h1>See every watt, <span class="grad">in real time</span>.</h1>
+          <p class="lede">
+            VoltVision combines a DIN-rail smart meter and a mobile app to turn electricity usage into actionable insights:
+            live monitoring, alerts, and detailed reports, built for homes and businesses.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#contact">Request a demo</a>
+            <a class="btn btn--ghost" href="#product">Explore the device</a>
+          </div>
+
+          <div class="hero__stats" aria-label="Key highlights">
+            <div class="stat">
+              <div class="stat__k">LoRa</div>
+              <div class="stat__v">long‑range, low‑power telemetry</div>
+            </div>
+            <div class="stat">
+              <div class="stat__k">Mobile</div>
+              <div class="stat__v">usage anywhere, anytime</div>
+            </div>
+            <div class="stat">
+              <div class="stat__k">Alerts</div>
+              <div class="stat__v">stay ahead of spikes & waste</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__visual">
+          <div class="card card--glass">
+            <div class="card__header">
+              <span class="pill">Prototype</span>
+              <span class="muted">DIN‑rail smart meter</span>
+            </div>
+
+            <div class="device-stack">
+              <figure class="media">
+                <img src="assets/img/product_dinrail.png" alt="VoltVision DIN-rail enclosure with LCD and buttons" loading="eager" />
+              </figure>
+
+              <figure class="media media--float">
+                <img src="assets/img/product_exploded.png" alt="Exploded view: enclosure, LCD, board, and connectors" loading="lazy" />
+              </figure>
+            </div>
+
+            <div class="card__footer">
+              <div class="mini">
+                <div class="mini__k">Install</div>
+                <div class="mini__v">DIN rail + guided setup</div>
+              </div>
+              <div class="mini">
+                <div class="mini__k">Data</div>
+                <div class="mini__v">secure cloud sync</div>
+              </div>
+              <div class="mini">
+                <div class="mini__k">Control</div>
+                <div class="mini__v">app dashboards & reports</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="glow" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Logos / credibility line (no reviews) -->
+    <section class="stripe">
+      <div class="container stripe__inner">
+        <p class="stripe__text">
+          Built for transparent energy management, from residential users to commercial enterprises.
+        </p>
+        <div class="stripe__chips" aria-hidden="true">
+          <span class="chip">Residential</span>
+          <span class="chip">SMEs</span>
+          <span class="chip">Commercial</span>
+          <span class="chip">Utilities</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product -->
+    <section class="section" id="product">
+      <div class="container">
+        <div class="section__head">
+          <h2>Hardware that disappears into your panel.</h2>
+          <p class="muted">
+            A compact DIN‑rail meter with local display + secure telemetry. Designed for quick installation and reliable data capture.
+          </p>
+        </div>
+
+        <div class="grid2">
+          <div class="card">
+            <h3>Designed for the real world</h3>
+            <ul class="list">
+              <li><span class="dot"></span>Panel‑friendly DIN‑rail enclosure</li>
+              <li><span class="dot"></span>Local LCD for at‑a‑glance readings</li>
+              <li><span class="dot"></span>Button interface for basic navigation</li>
+              <li><span class="dot"></span>Telemetry-ready electronics stack</li>
+            </ul>
+            <div class="card__actions">
+              <button class="btn btn--secondary" data-modal="assets/img/product_exploded.png" data-caption="Exploded view: enclosure + LCD + boards">
+                View internals
+              </button>
+              <button class="btn btn--secondary" data-modal="assets/img/product_dinrail.png" data-caption="DIN-rail smart meter prototype">
+                View enclosure
+              </button>
+            </div>
+          </div>
+
+          <div class="card card--media">
+            <figure class="media media--full">
+              <img src="assets/img/product_dinrail.png" alt="VoltVision meter mounted on DIN rail concept render" loading="lazy" />
+            </figure>
+          </div>
+        </div>
+
+        <div class="feature-row">
+          <div class="feature">
+            <h4>Real-time measurement</h4>
+            <p class="muted">Track consumption as it happens, Turn “monthly surprises” into daily control.</p>
+          </div>
+          <div class="feature">
+            <h4>Long-range connectivity</h4>
+            <p class="muted">LoRa data transmission supports stable telemetry with efficient power use.</p>
+          </div>
+          <div class="feature">
+            <h4>Easy onboarding</h4>
+            <p class="muted">QR-based setup and a clean app flow make deployment simple.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- App -->
+    <section class="section section--alt" id="app">
+      <div class="container">
+        <div class="section__head">
+          <h2>Your energy, on your phone.</h2>
+          <p class="muted">
+            A mobile companion built for clarity, live values (power, current, voltage), energy history, and fast access anywhere.
+          </p>
+        </div>
+
+        <div class="appgrid">
+          <div class="phone">
+            <div class="phone__top" aria-hidden="true"></div>
+            <div class="phone__screen">
+              <img id="phoneImg" src="assets/img/app_dashboard.png" alt="VoltVision app dashboard showing energy metrics" loading="lazy" />
+            </div>
+            <div class="phone__bottom" aria-hidden="true"></div>
+          </div>
+
+          <div class="card">
+            <h3>Dashboards that drive decisions</h3>
+            <p class="muted">
+              Quickly view active power, apparent power, current, energy, power factor, and voltage in one place.
+              Set thresholds to get notified when consumption spikes.
+            </p>
+
+            <div class="tabs" role="tablist" aria-label="App views">
+              <button class="tab is-active" role="tab" aria-selected="true" data-img="assets/img/app_dashboard.png">My Energy</button>
+              <button class="tab" role="tab" aria-selected="false" data-img="assets/img/app_signin.png">Onboarding</button>
+            </div>
+
+            <div class="bullets">
+              <div class="bullet">
+                <div class="bullet__icon">📈</div>
+                <div>
+                  <div class="bullet__title">Live + historical insights</div>
+                  <div class="muted">From instant readings to reports you can share.</div>
+                </div>
+              </div>
+              <div class="bullet">
+                <div class="bullet__icon">🔔</div>
+                <div>
+                  <div class="bullet__title">Personalized alerts</div>
+                  <div class="muted">Stay ahead of abnormal load and unnecessary waste.</div>
+                </div>
+              </div>
+              <div class="bullet">
+                <div class="bullet__icon">🧾</div>
+                <div>
+                  <div class="bullet__title">Transparency by design</div>
+                  <div class="muted">Bring visibility to consumption. Help users optimize and reduce costs.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card__actions">
+              <a class="btn btn--primary" href="#contact">Get early access</a>
+              <a class="btn btn--ghost" href="#how">How it works</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="section" id="how">
+      <div class="container">
+        <div class="section__head">
+          <h2>From panel to insight-in seconds.</h2>
+          <p class="muted">
+            VoltVision captures real-time consumption, sends it to a central database, and surfaces it in a mobile app with alerts and reports.
+          </p>
+        </div>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step__n">1</div>
+            <h3>Measure</h3>
+            <p class="muted">Smart meter reads electricity usage continuously.</p>
+          </div>
+          <div class="step">
+            <div class="step__n">2</div>
+            <h3>Transmit</h3>
+            <p class="muted">LoRa securely forwards readings to a gateway / backend.</p>
+          </div>
+          <div class="step">
+            <div class="step__n">3</div>
+            <h3>Store</h3>
+            <p class="muted">A central database keeps history for analytics and reporting.</p>
+          </div>
+          <div class="step">
+            <div class="step__n">4</div>
+            <h3>Act</h3>
+            <p class="muted">Mobile dashboards + alerts help users reduce costs and waste.</p>
+          </div>
+        </div>
+
+        <div class="callout">
+          <div>
+            <h3>Where we’re going</h3>
+            <p class="muted">
+              Short term: pilot deployments and user feedback. Medium term: AI‑assisted features and broader rollout.
+              Long term: national scale impact and sustainability leadership.
+            </p>
+          </div>
+          <a class="btn btn--secondary" href="#contact">Partner with us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section class="section section--alt" id="team">
+      <div class="container">
+        <div class="section__head">
+          <h2>Built by a hands-on team.</h2>
+          <p class="muted">
+            Hardware, embedded systems, telecom, and product execution, end to end.
+          </p>
+        </div>
+
+        <div class="team">
+          <article class="person">
+            <img src="assets/img/founder1.jpg" alt="Photo of Dr. Bengherbia Billel" loading="lazy" />
+            <div class="person__meta">
+              <h3>Dr. Bengherbia Billel</h3>
+              <p class="muted">Main supervisor • electronics hardware design & implementation</p>
+            </div>
+          </article>
+
+          <article class="person">
+            <img src="assets/img/founder2.jpg" alt="Photo of Mr. Tobbal Abdelhafid" loading="lazy" />
+            <div class="person__meta">
+              <h3>Mr. Tobbal Abdelhafid</h3>
+              <p class="muted">Co‑supervisor • signal processing, WSN, embedded systems & ML</p>
+            </div>
+          </article>
+
+          <article class="person">
+            <img src="assets/img/founder3.jpg" alt="Photo of Ouldmaamar Youcef" loading="lazy" />
+            <div class="person__meta">
+              <h3>Ouldmaamar Youcef</h3>
+              <p class="muted">Project team • electronics, app development, 3D conception</p>
+            </div>
+          </article>
+
+          <article class="person">
+            <img src="assets/img/founder4.jpg" alt="Photo of Berkane Ismail" loading="lazy" />
+            <div class="person__meta">
+              <h3>Berkane Ismail</h3>
+              <p class="muted">Project team • electronics, app development, 3D conception</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="note">
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact">
+          <div>
+            <h2>Let’s build the future of energy visibility.</h2>
+            <p class="muted">
+              Want a pilot, a partnership, or a quote? Send a message and we’ll respond.
+            </p>
+
+            <div class="contact__cards">
+              <div class="ccard">
+                <div class="ccard__k">Email</div>
+                <a class="ccard__v" href="mailto:hello@voltvision.example">abdelhafidtobbal@gmail.com</a>
+              </div>
+              <div class="ccard">
+                <div class="ccard__k">Location</div>
+                <div class="ccard__v">Algeria</div>
+                <div class="ccard__hint muted">Nationwide ambition</div>
+              </div>
+            </div>
+          </div>
+
+          <form class="form" onsubmit="return false" aria-label="Contact form">
+            <label>
+              <span>Name</span>
+              <input type="text" placeholder="Your name" autocomplete="name" />
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" placeholder="you@company.com" autocomplete="email" />
+            </label>
+            <label>
+              <span>Message</span>
+              <textarea rows="5" placeholder="Tell us about your use-case…"></textarea>
+            </label>
+            <button class="btn btn--primary" id="fakeSend">Send message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div>
+          <div class="brand brand--footer">
+            <span class="brand__mark" aria-hidden="true">⚡</span>
+            <span class="brand__name">VoltVision</span>
+          </div>
+          <p class="muted small">IoT energy intelligence : smart meters + mobile insight.</p>
+        </div>
+        <div class="footer__links">
+          <a href="#product">Product</a>
+          <a href="#app">App</a>
+          <a href="#team">Team</a>
+          <a href="#top">Back to top</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Modal -->
+  <div class="modal" id="modal" aria-hidden="true" role="dialog" aria-label="Image preview">
+    <div class="modal__overlay" data-close="1"></div>
+    <div class="modal__content" role="document">
+      <button class="modal__close" aria-label="Close" data-close="1">✕</button>
+      <figure class="modal__figure">
+        <img id="modalImg" src="" alt="" />
+        <figcaption id="modalCap" class="muted"></figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
